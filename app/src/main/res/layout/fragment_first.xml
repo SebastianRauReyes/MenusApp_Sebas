@@ -6,15 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment1Activity"
-    android:background="@android:color/holo_green_light">
+    android:background="#F7BE81">
 
     <TextView
         android:id="@+id/textview"
+        android:textStyle="bold"
+        android:textColor="@color/primary_dark"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:textSize="32sp"
-        android:text="First Fragment" />
+        android:text="Primer Fragmento" />
 
 
 </android.support.constraint.ConstraintLayout>

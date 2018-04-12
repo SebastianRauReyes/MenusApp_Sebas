@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment3Activity"
-    android:background="@android:color/holo_blue_dark">
+    android:background="#FA8258">
 
     <TextView
         android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/primary_dark"
         android:textSize="32sp"
-        android:text="Third Fragment" />
+        android:text="Tercer Fragmento" />
 
 
 </android.support.constraint.ConstraintLayout>

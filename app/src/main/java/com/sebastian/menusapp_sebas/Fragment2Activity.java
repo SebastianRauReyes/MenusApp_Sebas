@@ -13,7 +13,7 @@ public class Fragment2Activity extends Fragment {
 
     private static final String TAG = Fragment2Activity.class.getSimpleName();
 
-    private String param1;
+    private String Contenido;
 
     public Fragment2Activity() {
     }
@@ -24,7 +24,7 @@ public class Fragment2Activity extends Fragment {
 
         // Get argument param1 if exists
         if (getArguments() != null) {
-            this.param1 = getArguments().getString("param1");
+            this.Contenido = getArguments().getString("Contenido");
         }
     }
     @Override
@@ -33,7 +33,7 @@ public class Fragment2Activity extends Fragment {
         View view = inflater.inflate(R.layout.fragment_second, container, false);
 
         TextView textView = (TextView)view.findViewById(R.id.textview);
-        textView.setText(textView.getText() + "\nParam1: " + param1);
+        textView.setText(textView.getText() + "\nContenido : " + Contenido);
         return view;
     }
 

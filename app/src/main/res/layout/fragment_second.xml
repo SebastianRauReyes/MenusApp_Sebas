@@ -6,15 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment2Activity"
-    android:background="@android:color/holo_orange_dark">
+    android:background="@color/primary_light">
 
     <TextView
         android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:textColor="@color/accent"
+        android:textStyle="bold"
         android:textSize="32sp"
-        android:text="Second Fragment" />
+        android:text="Segundo Fragmento" />
 
 
 </android.support.constraint.ConstraintLayout>

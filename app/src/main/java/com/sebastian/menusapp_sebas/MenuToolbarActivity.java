@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 public class MenuToolbarActivity extends AppCompatActivity {
@@ -58,7 +57,7 @@ public class MenuToolbarActivity extends AppCompatActivity {
                 Fragment fragment2 = new Fragment2Activity();
                 // Send 'param1' argument to Fragment
                 Bundle args = new Bundle();
-                args.putString("param1", "Hello Fragment!");
+                args.putString("Contenido", "Saludos!");
                 fragment2.setArguments(args);
                 // Replace content
                 fragmentManager2.beginTransaction().replace(R.id.content, fragment2).addToBackStack("tag").commit();
@@ -69,7 +68,7 @@ public class MenuToolbarActivity extends AppCompatActivity {
                 Toast.makeText(this, "Vista fragment3...", Toast.LENGTH_SHORT).show();
                 FragmentManager fragmentManager3 = getSupportFragmentManager();
                 // Create FirstFragment with factory
-                Fragment fragment3 = Fragment3Activity.newInstance("Hello Again!");
+                Fragment fragment3 = Fragment3Activity.newInstance("Saludos otra vez!");
                 // Replace content
                 fragmentManager3.beginTransaction().replace(R.id.content, fragment3).addToBackStack("tag").commit();
                 return true;
